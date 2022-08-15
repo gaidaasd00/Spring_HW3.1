@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Spring_HW3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-og-iQk" customClass="SpringView" customModule="SpringAnimation">
+                                <rect key="frame" x="87" y="122" width="216" height="115.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Parametrs" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQZ-Mh-B18">
+                                        <rect key="frame" x="5" y="5" width="206" height="105.33333333333333"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.023529411760000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2784313725" green="0.70980392160000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FQZ-Mh-B18" secondAttribute="trailing" constant="5" id="CUm-7U-QRr"/>
+                                    <constraint firstItem="FQZ-Mh-B18" firstAttribute="leading" secondItem="nlT-og-iQk" secondAttribute="leading" constant="5" id="Nez-T4-Kn0"/>
+                                    <constraint firstAttribute="bottom" secondItem="FQZ-Mh-B18" secondAttribute="bottom" constant="5" id="TE1-df-iPT"/>
+                                    <constraint firstItem="FQZ-Mh-B18" firstAttribute="top" secondItem="nlT-og-iQk" secondAttribute="top" constant="5" id="dG7-WD-8Bp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0n-JF-E50" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="72" y="709" width="246" height="30"/>
+                                <color key="backgroundColor" red="0.27843137254901962" green="0.70980392156862748" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" red="1" green="0.023529411764705882" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKs-Jz-X4h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.59215686274509804" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w0n-JF-E50" secondAttribute="trailing" constant="72" id="AG5-nn-E9R"/>
+                            <constraint firstAttribute="bottom" secondItem="nlT-og-iQk" secondAttribute="bottom" constant="606.66666666666674" id="Ku9-kE-PFA"/>
+                            <constraint firstItem="w0n-JF-E50" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Q1e-Eo-Xc1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nlT-og-iQk" secondAttribute="trailing" constant="87" id="RCq-se-Au8"/>
+                            <constraint firstItem="nlT-og-iQk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="cpl-tB-BLK"/>
+                            <constraint firstItem="nlT-og-iQk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="gYC-Uy-q7K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w0n-JF-E50" secondAttribute="bottom" constant="71" id="vSC-3o-dGf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationLable" destination="FQZ-Mh-B18" id="KKc-MH-bS8"/>
+                        <outlet property="animationView" destination="nlT-og-iQk" id="BwI-3n-7cO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.153846153846153" y="93.127962085308056"/>
+        </scene>
+    </scenes>
+</document>
