@@ -11,7 +11,25 @@ class DataSrore {
     
     static let shared = DataSrore()
     
-    let curves = AnimationCurve.allCases
+    let animations: [AnimationPreset] = [
+        .fadeIn,
+        .fadeInDown,
+        .fadeInRight,
+        .fadeInLeft,
+        .fadeIn,
+        .fadeInUp,
+        .fadeOut,
+        .fall,
+        .flash,
+        .pop,
+        .flipY,
+        .slideRight,
+        .wobble,
+        .squeezeRight,
+        .zoomOut,
+        .squeeze,
+        .squeezeUp
+    ]
     
     private init() {}
 }

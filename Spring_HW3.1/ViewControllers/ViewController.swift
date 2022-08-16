@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         private var animation = Animation.getRandomAnimation()
   
     // MARK: - IB Actions
-    @IBAction func animationButtonPressed(_ sender: SpringButton) {
+    @IBAction func animationButtonPressed(_ sender: UIButton) {
         animationLable.text = animation.description
         
         animationView.animation = animation.name
@@ -32,6 +32,5 @@ class ViewController: UIViewController {
         
         animation = Animation.getRandomAnimation()
         sender.setTitle("Run \(animation.name)", for: .normal)
-        sender.animate()
     }
 }

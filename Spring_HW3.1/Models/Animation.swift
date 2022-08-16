@@ -24,8 +24,8 @@ struct Animation {
     
     static func getRandomAnimation() -> Animation {
         Animation(
-            name: DataSrore.shared.curves.randomElement()?.rawValue ?? "slideLeft",
-            curve: DataSrore.shared.curves.randomElement()?.rawValue ?? "easeIn",
+            name: DataSrore.shared.animations.randomElement()?.rawValue ?? "slideLeft",
+            curve: DataSrore.shared.animations.randomElement()?.rawValue ?? "easeIn",
             force: Double.random(in: 1...1.5),
             duration: Double.random(in: 0.8...1.6),
             delay: 0.3
